@@ -10,22 +10,17 @@
 
 from selenium import webdriver
 import time
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
 import random
-
+import os
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.chrome.options import Options
 
 chrome_options = Options()
-chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-chrome_options.add_argument("--user-data-dir=chrome-data")
+
 chrome_options.add_argument("--start-maximized")
-# chrome_options.add_argument("--incognito")
-
 driver = webdriver.Chrome("./chromedriver.exe", chrome_options=chrome_options)
-chrome_options.add_argument("user-data-dir=chrome-data")
-
-
+# chrome_options.add_argument("user-data-dir=chrome-data")
+# chrome_options.add_argument('--profile-directory=Profile 3')
 # actions = ActionChains(driver)
 
 
