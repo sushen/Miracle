@@ -37,7 +37,7 @@ try:
     password = os.environ.get('my_facebook_password')
 
     driver.find_element_by_name("email").send_keys(username)
-    driver.find_element_by_name("pass").send_keys("MangoPeople@021")
+    driver.find_element_by_name("pass").send_keys(password)
     driver.find_element_by_name("login").click()
 
 except:
