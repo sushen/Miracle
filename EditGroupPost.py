@@ -6,7 +6,7 @@
 #
 #   !/usr/bin/env python
 #   coding: utf-8
-
+import pyautogui
 from selenium import webdriver
 import time
 import random
@@ -42,25 +42,24 @@ try:
 
 except:
     pass
+
 print(input("Press any Key: "))
 
-driver.get("https://www.facebook.com/sushen.biswas/")
+
+driver.get("https://www.facebook.com/groups/402353916617590/permalink/1630582000461436/")
+
+actions.send_keys(Keys.TAB * 23)
 print(input("Press any Key: "))
 driver.implicitly_wait(5)
-actions.send_keys(Keys.BACK_SPACE)
-actions.send_keys(Keys.TAB * 56)
 actions.send_keys(Keys.ENTER)
 actions.perform()
 
+# pyautogui.press("down")
+actions.send_keys(Keys.BACK_SPACE)
+actions.send_keys(Keys.ARROW_DOWN)
 print(input("Press any Key: "))
-driver.implicitly_wait(10)
-active_post_area = driver.switch_to.active_element
-active_post_area.send_keys("'driver.switch_to.active_element' "
-                           "this code is a one of important snippet for facebook automation.")
-actions.send_keys(Keys.TAB * 3)
-actions.send_keys(Keys.BACK_SPACE)
-driver.implicitly_wait(10)
-actions.send_keys(Keys.BACK_SPACE)
-actions.send_keys(Keys.TAB * 3)
-actions.send_keys(Keys.ENTER)
+driver.implicitly_wait(5)
+# actions.send_keys(Keys.ENTER)
 actions.perform()
+
+# driver.quit()
