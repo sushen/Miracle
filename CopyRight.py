@@ -2,7 +2,7 @@ import turtle
 import random
 
 window = turtle.Screen()
-window.bgcolor("pink")
+window.bgcolor("purple")
 
 n = random.random()
 
