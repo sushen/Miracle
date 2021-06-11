@@ -64,7 +64,7 @@ def navigatePagePostAria():
         actions.send_keys(Keys.TAB * 10)
         time.sleep(sleepTime)
         actions.perform()
-        print("Firast 10 tabs Working")
+        print(str(i) + " tabs Working")
 
     actions.send_keys(Keys.TAB * 6)
     actions.send_keys(Keys.ENTER)

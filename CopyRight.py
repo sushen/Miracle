@@ -115,10 +115,10 @@ def sushen():
 
 turnLestAndDrow()
 turtle.left(0)
-turtle.forward(250)
+turtle.forward(200)
 sushen()
 turtle.left(0)
-turtle.forward(50)
+turtle.forward(100)
 turnLestAndDrow()
 
 
