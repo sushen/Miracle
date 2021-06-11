@@ -116,6 +116,15 @@ def activeGroupAreaPostBtn():
     else:
         print("Post Button Not Found")
 
+
+safetyGroupLists = [
+    "https://www.facebook.com/groups/601242797290982",
+    "https://www.facebook.com/groups/729769827368286",
+    "https://www.facebook.com/groups/2092683587684490",
+    "https://www.facebook.com/groups/132593590202911"
+
+]
+
 # Replace it with your group
 groupLists = [
     "https://www.facebook.com/groups/pythonsnake2/",
@@ -165,7 +174,7 @@ groupLists = [
 def groupPost():
     index = 0
 
-    for groupLinkList in groupLists:
+    for groupLinkList in safetyGroupLists:
         driver.implicitly_wait(30)
         time.sleep(2)
         driver.get(groupLinkList)
