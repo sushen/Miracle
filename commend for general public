@@ -1,0 +1,9 @@
+For Running a Scripts:
+    1. Go to your project folder in my case its: K:\Project\Python\Miracle
+    2. venv/Scripts/activate
+    3. python Facebook-Group-Link-Catagories-Bot.py
+
+    When you need to deactivate:
+    4. a.GO to location :cd venv/Scripts/
+       b.and then type  : deactivate
+
